@@ -1,0 +1,74 @@
+/*Form section*/
+.row-fifth section{
+  grid-area:row-fifth;
+  background:#fff;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+/*First section*/
+.first-section {
+  grid-column: 1/2;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.first-section .sendButton{
+  background: black;
+  color:white;
+  height: 3em;
+  width:30em;
+  text-align: center;
+  padding: 0px;
+}
+.first-section input{
+  height: 3em;
+  width:35em;
+  border:1px solid lightgrey;
+}
+/*Second section*/
+.second-section {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  align-items: center;
+}
+.second-section a{
+  text-decoration: none;
+  font-size: 1.5em;
+  color:black;
+}
+/*Third section*/
+.third-section {
+  grid-column: 3/4;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.third-section div a,.third-section div{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color:black;
+}
+.third-section div  i{
+  margin-right: 20px;
+}
+
+ @media only screen and (min-width:82em){
+   .row-fifth section{
+     grid-area:row-fifth;
+     background:#fff;
+     display:grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-template-rows: minmax(20em,auto);
+     grid-gap: 5px;
+   }
+ }
